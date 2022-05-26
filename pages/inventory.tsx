@@ -98,8 +98,8 @@ const Inventory: NextPage = () => {
   };
 
   useEffect(() => {
-    loadInventory();
-  }, [loadingNfts]);
+    if (web3.account) loadInventory();
+  }, [loadingNfts, web3.account]);
 
   const [connecting, setConnecting] = useState(false);
 
