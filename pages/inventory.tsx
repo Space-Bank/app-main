@@ -159,6 +159,7 @@ const Inventory: NextPage = () => {
                             href={`https://nftkey.app/collections/spacebankmobboss/token-details/?tokenId=${i}`}
                             target="_blank"
                             rel="noreferrer"
+                            className="h-36 w-36 mb-2"
                           >
                             <Image
                               src={imageUrlBoss.replace("$id", i)}
